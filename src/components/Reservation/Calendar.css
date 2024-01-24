@@ -1,0 +1,25 @@
+/* CalendarStyles.css */
+.rbc-calendar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use Microsoft's Segoe UI font or another suitable font */
+    color: #333; /* Set text color */
+  }
+  
+  .rbc-event {
+    background-color: #0078d4; /* Set event background color */
+    color: #fff; /* Set event text color */
+    border: 1px solid #0078d4; /* Set event border color */
+  }
+  
+  .rbc-toolbar {
+    background-color: #0078d4; /* Set toolbar background color */
+    color: #fff; /* Set toolbar text color */
+  }
+  
+  .rbc-toolbar button {
+    color: #fff; /* Set toolbar button text color */
+  }
+  
+  .rbc-today {
+    background-color: #f1f1f1; /* Set today's date background color */
+  }
+  

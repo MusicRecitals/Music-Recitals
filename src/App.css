@@ -1,0 +1,44 @@
+.App {
+  text-align: left;
+}
+
+
+.rtable {
+	width: 50%;
+	height: 10vh;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+}
+
+table {
+	border: 2px solid forestgreen;
+	width: 800px;
+	height: 200px;
+}
+
+th {
+	border-bottom: 1px solid black;
+  background-color: moccasin;
+  
+}
+
+td {
+	text-align: center;
+}
+
+button{
+  color: darkcyan;
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: 0.5px 1px 1px black;
+}
+
+.NavBarLeft{
+  float: right;
+}
+
+a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
