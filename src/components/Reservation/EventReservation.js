@@ -193,7 +193,7 @@ const EventReservation = () => {
                   Wednesday |{" "}
                 </td>
               </th>
-              
+
               <th>
                 <td>
                   {" "}

@@ -181,8 +181,7 @@ const Rehearsal = () => {
                 Save event regardless of conflict with other event(s)
               </label>{" "}
             </div>
-
-
+            
 
             <p className="Main"> Notes</p>
             <textarea></textarea>

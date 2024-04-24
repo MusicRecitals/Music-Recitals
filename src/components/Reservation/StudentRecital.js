@@ -329,8 +329,8 @@ const StudentRecital = () => {
               <button>Submit</button>
               <button>Cancel</button>
             </div>
-            <p>Best case scenario</p>
-
+             
+            <p></p>
 
 
 

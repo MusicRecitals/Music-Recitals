@@ -55,7 +55,7 @@ const FacultyForm = () => {
             </div>
             <p className="Main">Event Owner</p>
             <select>
-            <option value="Please Select a Venue">Select Liason</option>
+              <option value="Please Select a Venue">Select Liason</option>
               <option value="Please Select a Venue">Davis, Jayson</option>
               <option value="Evelyn Smith Music Theatre">Aoki, Miki</option>
             </select>
@@ -173,141 +173,121 @@ const FacultyForm = () => {
             <p className="Main">Override</p>
             <input value="test" type="checkbox" /> Save event regardless of
             conflict with other event(s)
-
-
-
-
             <p className="Main">Administrative Options</p>
             <div>
               <input value="ASU Gammage" type="checkbox" />
               <label> Event Requires Call Time</label>{" "}
             </div>
             <div>
-                      <input value="ASU Gammage" type="checkbox" />     
+              <input value="ASU Gammage" type="checkbox" />
               <label> Event Staff Time</label>
             </div>
             <p className="Main">Faculty Message</p>
             <textarea></textarea>
-
             <p className="Main">Notes</p>
             <textarea></textarea>
-
             <p className="Main">Ticketed</p>
             <select name="Available time">
-                <option >Select</option>
-                <option> No</option>
-                <option>Yes</option>
+              <option>Select</option>
+              <option> No</option>
+              <option>Yes</option>
             </select>
             &nbsp;
             <p className="Main">Event Description (required)</p>
-            <p className="Description">This is the description for the public web calendar.</p>
-            <p className="Description">Email photos for this listing to MusicEvents@asu.edu.</p>
-            <p className="Description">Type "Do Not List" if you do not want this event listed on the public events calendar.</p>
+            <p className="Description">
+              This is the description for the public web calendar.
+            </p>
+            <p className="Description">
+              Email photos for this listing to MusicEvents@asu.edu.
+            </p>
+            <p className="Description">
+              Type "Do Not List" if you do not want this event listed on the
+              public events calendar.
+            </p>
             <textarea></textarea>
             <div className="Painobox1">
-            <p className="Piano">Piano Tech Options</p>
-            
-            <div >
-              <input value="ASU Gammage" type="checkbox" id="id1"/>
-              <label for="id1"> Grand Piano</label>{" "}
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> New York Steinway</label>
-            </div>
-            
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Hamburg Steinway Piano</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Bösendorfer Piano</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> 2 Grand Pianos</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Upright Piano</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Harpsichord - German Single</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Harpsichord - French Double</label>
-            </div><div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label>  Harpsichord - Italian</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Fortepiano</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Interior Piano Performance
-</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label>  Prepared Piano
-</label>
-            </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> None</label>
-            </div>
-            
-          
+              <p className="Piano">Piano Tech Options</p>
 
-            <p className="Main">Notes</p>
-            <textarea></textarea>
-            
+              <div>
+                <input value="ASU Gammage" type="checkbox" id="id1" />
+                <label for="id1"> Grand Piano</label>{" "}
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> New York Steinway</label>
+              </div>
+
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Hamburg Steinway Piano</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Bösendorfer Piano</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> 2 Grand Pianos</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Upright Piano</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Harpsichord - German Single</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Harpsichord - French Double</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Harpsichord - Italian</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Fortepiano</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Interior Piano Performance</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Prepared Piano</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> None</label>
+              </div>
+
+              <p className="Main">Notes</p>
+              <textarea></textarea>
             </div>
             <div className="space"></div>
             <div className="Painobox1">
-            <p className="Piano">Audio Tech Entry Screen</p>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> No A/V</label>
+              <p className="Piano">Audio Tech Entry Screen</p>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> No A/V</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> Includes audio/Visual</label>
+              </div>
+              <div>
+                <input value="ASU Gammage" type="checkbox" />
+                <label> No REC</label>
+              </div>
+              <p className="Main">Notes</p>
+
+              <textarea></textarea>
             </div>
             <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> Includes audio/Visual</label>
+              <button>Submit</button>
+              <button>Cancel</button>
             </div>
-            <div>
-                      <input value="ASU Gammage" type="checkbox" />     
-              <label> No REC</label>
-            </div>
-            <p className="Main" >Notes</p>
-
-            <textarea ></textarea>
-          
-            </div>
-               <div><button>Submit</button>
-               <button>Cancel</button>
-               </div> 
-
-            
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             {/*<p className="Main">Venue</p>
             <select>
               <option value="Please Select a Venue">
