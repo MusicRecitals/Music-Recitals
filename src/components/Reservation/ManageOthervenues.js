@@ -46,6 +46,7 @@ const ManageOthervenues = () => {
             <th>123 456 7890 |</th>
             <th>URL |</th>
             <th>Active</th>
+            
         </td>
     </table>
     <table className='man'>

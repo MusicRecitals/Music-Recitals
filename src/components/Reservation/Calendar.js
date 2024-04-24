@@ -58,8 +58,85 @@ const CalendarComponent = () => {
         title: 'Session 2',
         start: new Date(2023, 10, 30, 1, 0),
         end: new Date(2023, 10, 30, 4, 40),
-      }
+      },
+      {
+        title: 'Session 433',
+        start: new Date(2024, 0, 3, 1, 0),
+        end: new Date(2024, 0, 3, 4, 40),
+      },
+      {
+        title: 'Session 2324',
+        start: new Date(2024, 1, 5, 1, 0),
+        end: new Date(2024, 1, 5, 4, 40),
+      },
+      {
+        title: 'Session Piano',
+        start: new Date(2024, 1, 5, 6, 0),
+        end: new Date(2024, 1, 5, 7, 40),
+      },
+      {
+        title: 'Session Piano',
+        start: new Date(2024, 1, 5, 16, 0),
+        end: new Date(2024, 1, 5, 17, 40),
+      },
+      {
+        title: 'Session Piano',
+        start: new Date(2024, 1, 5, 22, 0),
+        end: new Date(2024, 1, 5, 23, 40),
+      },
+      {
+        title: 'Event1',
+        start: new Date(2024, 1, 6, 6, 0),
+        end: new Date(2024, 1, 6, 7, 40),
+      },
+      {
+        title: 'Event2',
+        start: new Date(2024, 1, 6, 13, 0),
+        end: new Date(2024, 1, 6, 17, 40),
+      },
+      {
+        title: 'Event3',
+        start: new Date(2024, 1, 7, 11, 0),
+        end: new Date(2024, 1, 7, 14, 15),
+      },
+      {
+        title: 'Event4',
+        start: new Date(2024, 1, 6, 18),
+        end: new Date(2024, 1, 6, 19),
+      },
+      {
+        title: 'Event5',
+        start: new Date(2024, 1, 6, 1, 0),
+        end: new Date(2024, 1, 6, 7, 40),
+      },
+      {
+        title: 'Event6',
+        start: new Date(2024, 1, 6, 3, 0),
+        end: new Date(2024, 1, 6, 4, 40),
+      },
+      {
+        title: 'Event7',
+        start: new Date(2024, 1, 6, 13, 0),
+        end: new Date(2024, 1, 6, 14, 40),
+      },
+      {
+        title: 'Event8',
+        start: new Date(2024, 1, 6, 23, 0),
+        end: new Date(2024, 1, 6, 23, 40),
+      },
+      {
+        title: 'Event9',
+        start: new Date(2024, 1, 6, 21, 0),
+        end: new Date(2024, 1, 6, 22, 40),
+      },
+      {
+        title: 'Event10',
+        start: new Date(2024, 1, 6, 18, 0),
+        end: new Date(2024, 1, 6, 20, 40),
+      },
+      
   ];
+
 
   const [clickedDate, setClickedDate] = useState(null);
 
@@ -106,7 +183,7 @@ const CalendarComponent = () => {
                 <textarea></textarea>
             </th>
         </tr>
-
+      
     </table>
         <p>Filters</p>
         
@@ -165,11 +242,13 @@ const CalendarComponent = () => {
             </th>
             <th>
                 <div className="mainclass">
-                <p>November</p>
+                <p>February</p>
                 
                     <div className="box1"></div>
                 </div>
-                
+                <div>
+
+                </div>
             </th>
         </table>
         </div> 

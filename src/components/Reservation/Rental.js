@@ -1,10 +1,10 @@
-import "./EventReservation.css";
+import "./Rental.css";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 
-const EventReservation = () => {
+const Rental = () => {
   const [startDate, setStartDate] = useState(new Date());
 
   return (
@@ -34,21 +34,250 @@ const EventReservation = () => {
             <p className="Main">
               Event Type{" "}
               <select>
-                <option value="cl">Class</option>
+                <option value="cl">Rental</option>
               </select>
             </p>
             <div className="Line"></div>
             <p className="Main">Event Status</p>
             <div>
-              <input type="radio" value="Active" name="status" /> Active |
-              &nbsp;
-              <input type="radio" value="Cancelled" name="status" /> Cancelled |
-              &nbsp;
+              <input type="radio" value="Active" name="status" /> Active | &nbsp;
+              <input type="radio" value="Cancelled" name="status" /> Cancelled | &nbsp;
               <input type="radio" value="Deleted" name="status" /> Deleted
+               
             </div>
+            
+            <p className="Main">
+              Tech Sheet Form: No [Save event to enable upload]
+            </p>
+             
+            <p className="Main">
+              This event is private <input value="ASU Gammage" type="checkbox" />
+            </p>
+            
+             
             <p className="Main">Event Title</p>
             <textarea></textarea>
             <p className="Main">Venue</p>
+            <select>
+              <option value="Please Select a Venue">
+                Please Select a Venue
+              </option>
+              <option value="Evelyn Smith Music Theatre">
+                Evelyn Smith Music Theatre
+              </option>
+              <option value="Katzin Concert Hall">Katzin Concert Hall</option>
+              <option value="Organ Hall">Organ Hall</option>
+              <option value="Recital Hall">Recital Hall</option>
+            </select>
+            <p className="Main">Event Date</p>
+            <DatePicker
+              className="Date"
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
+            <Link to="/calendar">
+              {" "}
+              <a
+                classname="callink"
+                href="https://musicrecitals.hida.asu.edu/calendar.php"
+              >
+                View calendar (new window)
+              </a>{" "}
+            </Link>
+            <p className="Main">Start Time</p>
+            <table className="even">
+              <th>
+                <td>
+                  <select>
+                    <option value="Please Select a Venue">1</option>
+                    <option value="Evelyn Smith Music Theatre">2</option>
+                    <option value="Katzin Concert Hall">3</option>
+                    <option value="Organ Hall">4</option>
+                    <option value="Recital Hall">5</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="Please Select a Venue">00</option>
+                    <option value="Evelyn Smith Music Theatre">05</option>
+                    <option value="Katzin Concert Hall">10</option>
+                    <option value="Organ Hall">15</option>
+                    <option value="Recital Hall">20</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="Please Select a Venue">AM</option>
+                    <option value="Evelyn Smith Music Theatre">PM</option>
+                  </select>
+                </td>
+              </th>
+            </table>
+            <p className="Main">End Time</p>
+            <table className="even">
+              <th>
+                <td>
+                  <select>
+                    <option value="Please Select a Venue">1</option>
+                    <option value="Evelyn Smith Music Theatre">2</option>
+                    <option value="Katzin Concert Hall">3</option>
+                    <option value="Organ Hall">4</option>
+                    <option value="Recital Hall">5</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="Please Select a Venue">00</option>
+                    <option value="Evelyn Smith Music Theatre">05</option>
+                    <option value="Katzin Concert Hall">10</option>
+                    <option value="Organ Hall">15</option>
+                    <option value="Recital Hall">20</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="Please Select a Venue">AM</option>
+                    <option value="Evelyn Smith Music Theatre">PM</option>
+                  </select>
+                </td>
+              </th>
+            </table>
+            <p className="Main">Override</p>
+            <input value="test" type="checkbox" /> Save event regardless of
+            conflict with other event(s)
+
+
+
+
+            <p className="Main">Administrative Options</p>
+            <div>
+              <input value="ASU Gammage" type="checkbox" />
+              <label> Event Staff Time</label>{" "}
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Manage Rentals</label>
+            </div>
+
+            <p className="Main">Faculty Liaison</p>
+            <select>
+              <option value="cl">Select Liaison</option>
+              <option value="cl">Adler, Jacob</option>
+              <option value="c1">Aoki, Miki</option>
+            </select>
+
+
+       
+
+            <p className="Main">Notes</p>
+            <textarea></textarea>
+
+        
+            <div className="Painobox1">
+            <p className="Piano">Piano Tech Options</p>
+            
+            <div >
+              <input value="ASU Gammage" type="checkbox" id="id1"/>
+              <label for="id1"> Grand Piano</label>{" "}
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> New York Steinway</label>
+            </div>
+            
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Hamburg Steinway Piano</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Bösendorfer Piano</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> 2 Grand Pianos</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Upright Piano</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Harpsichord - German Single</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Harpsichord - French Double</label>
+            </div><div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label>  Harpsichord - Italian</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Fortepiano</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Interior Piano Performance
+</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label>  Prepared Piano
+</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> None</label>
+            </div>
+            
+          
+
+            <p className="Main">Notes</p>
+            <textarea></textarea>
+            
+            </div>
+            <div className="space"></div>
+            <div className="Painobox1">
+            <p className="Piano">Audio Tech Entry Screen</p>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> No A/V</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> Includes audio/Visual</label>
+            </div>
+            <div>
+                      <input value="ASU Gammage" type="checkbox" />     
+              <label> No REC</label>
+            </div>
+            <p className="Main" >Notes</p>
+
+            <textarea ></textarea>
+          
+            </div>
+               <div><button>Submit</button>
+               <button>Cancel</button>
+               </div> 
+
+            
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/*<p className="Main">Venue</p>
             <select>
               <option value="Please Select a Venue">
                 Please Select a Venue
@@ -193,7 +422,7 @@ const EventReservation = () => {
                   Wednesday |{" "}
                 </td>
               </th>
-              
+
               <th>
                 <td>
                   {" "}
@@ -223,8 +452,7 @@ const EventReservation = () => {
               <option value="Please Select a Venue">Davis, Jayson</option>
               <option value="Evelyn Smith Music Theatre">Aoki, Miki</option>
             </select>
-            <p className="Main">Notes</p>
-            <textarea></textarea>
+            
             <p className="Main">Saving Options for Recurring Events</p>
             <table className="even2">
               <th>
@@ -240,7 +468,7 @@ const EventReservation = () => {
               </th>
             </table>
             <button>Submit</button>
-            <button>Cancel</button>
+  <button>Cancel</button> */}
           </form>
           <div className="Footer1">
             <div className="Footer2">
@@ -278,4 +506,4 @@ const EventReservation = () => {
     </>
   );
 };
-export default EventReservation;
+export default Rental;

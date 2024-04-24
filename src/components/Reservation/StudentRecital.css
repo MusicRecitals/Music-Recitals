@@ -1,0 +1,26 @@
+.Piano{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Painobox1{
+    width: 100%;
+            border: black 1px solid;
+            position: relative;
+padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.space{
+    height: 10px;
+}
+
+form{
+    margin-left: 10px;
+}
+ 
+label{
+    margin-left: 5px;
+}
